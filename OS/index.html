@@ -86,13 +86,13 @@
         justify-self: center;
         border-radius: 50%;
         cursor: pointer;
-        margin-left: 5px;
         margin-right: 5px;
       }
       .start {
         cursor: pointer;
         border-radius: 40% !important;
         transition: 0.2s ease;
+        margin-right: 5px;
       }
       .start:hover {
         filter: brightness(80%);
@@ -108,12 +108,13 @@
         height: 60vh;
         background-color: rgba(80, 80, 120, 0.5);
         position: fixed;
+        vertical-align: top;
         bottom: 60px;
         display: none;
         color: white;
         border-radius: 12px;
         backdrop-filter: blur(12px);
-        position: inline-flex;
+        z-index: 999;
       }
       #startMenu h1 {
         font-size: 30px;
@@ -127,11 +128,16 @@
       }
       #startMenu .app {
         position: inline-flex;
+        flex-wrap: wrap;
         width: 80px;
         height: 80px;
         margin: 10px;
         cursor: pointer;
         font-size: 80px;
+        border-radius: 50%;
+      }
+      #startMenu p {
+        position: inline-flex;
       }
       #disclaimer {
         color: white;
@@ -232,7 +238,7 @@
       <br>
       <hr>
       <img class="app" id="brome" src="https://butterdogco.com/img/favicon.ico" title="Boogle Brome" onclick="openBrome()">
-      <span class="app material-symbols-outlined" id="settings" title="Settings" onclick="openSettings()">settings</span>
+      <img src="https://cdn.iconscout.com/icon/free/png-256/settings-410-461751.png" class="app" id="settings" title="Settings" onclick="openSettings()">
     </div>
     <div id="boot">
       <img src="https://butterdogco.com/img/butter-os-tab.png">
@@ -261,7 +267,7 @@
     <div class="taskbar">
       <img class="start" title="Click to open start" id="start" src="https://butterdogco.com/img/butter-os-tab.png" onclick="openStart()">
       <img class="app" id="brome" title="Boogle Brome" style="margin-left: -10px" src="https://butterdogco.com/img/favicon.ico" onclick="openBrome()">
-      <span class="app material-symbols-outlined" id="settings" style="bottom: 50px; color: white; font-size: 35px; cursor: pointer;" title="Settings" onclick="openSettings()">settings</span>
+      <img src="https://cdn.iconscout.com/icon/free/png-256/settings-410-461751.png" class="app" id="settings" style="margin-left: -10px" title="Settings" onclick="openSettings()">
     </div>
     
     <script>
