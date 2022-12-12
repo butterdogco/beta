@@ -8,8 +8,8 @@
         body {
             background: none;
             margin: none;
+            font-family: 'Roboto', sans-serif;
         }
-
         .logo {
             width: 40px;
             height: 40px;
@@ -23,6 +23,7 @@
           float: right;
           margin: 15px;
           cursor: pointer;
+          margin-right: 80px;
         }
         .song {
           width: 180px;
@@ -47,6 +48,26 @@
           color: white;
           font-weight: bold;
         }
+        #controls {
+          position: fixed;
+          background: black;
+          opacity: 50%;
+          width: 100vw;
+          margin: 0;
+          bottom: 0px;
+          left: -10px;
+          padding: 10px;
+        }
+        #controls button {
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          font-weight: bolder;
+          border: none;
+          background-color: rgb(80, 80, 80);
+          color: white;
+          cursor: pointer;
+        }
     </style>
 </head>
 
@@ -61,6 +82,13 @@
         <p>Horizontally Spinning Rat</p>
       </div>
     </main>
+    <div id="controls">
+      <center>
+        <button><-</button>
+        <button>||</button>
+        <button>-></button>
+      </center>
+    </div>
 </body>
 
 </html>
