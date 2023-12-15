@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ButterOS</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="favicon.ico">
+  </head>
+  <body>
+    <div id="desktop">
+      <div id="desktopBackground" class="desktopBackground" onclick="desktopClick()"></div>
+      
+      <div id="desktopIcon" style="background-image:url('img/icons/butterdog.ico');" onclick="openApp('Boogle Brome')">
+        <p>Boogle Brome</p>
+      </div>
+      <div id="desktopIcon" style="background-image:url('img/icons/minecraft.jpeg');" onclick="openApp('Minecraft')">
+        <p>Minecraft</p>
+      </div>
+      <!--<div id="desktopIcon" style="background-image:url('img/icons/appstore.png');" onclick="openApp('App Store')">-->
+      <!--  <p>App Store</p>-->
+      <!--</div>-->
+      <div id="desktopIcon" style="background-image:url('img/icons/settings.png');" onclick="openApp('Settings')">
+        <p>Settings</p>
+      </div>
+      <div id="desktopIcon" style="background-image:url('img/icons/help.png');" onclick="openApp('Help')">
+        <p>Help</p>
+      </div>
+    </div>
+
+    <!--<div id="window" class="window">-->
+    <!--  <div id="closeWindow" onclick="closeWindow();">X</div>-->
+    <!--  <div id="windowheader" class="windowheader">name</div>-->
+    <!--  <iframe src="https://google.com/?igu=1"></iframe>-->
+    <!--</div>-->
+    
+    <div id="startMenu" class="startMenu">
+      <h1 style="text-align: center;">ButterHub</h1>
+      <h2>Applications</h2>
+        <div id="desktopIcon" style="background-image:url('img/icons/butterdog.ico');" onclick="openApp('Boogle Brome')">
+          <p>Boogle Brome</p>
+        </div>
+        <div id="desktopIcon" style="background-image:url('img/icons/minecraft.jpeg');" onclick="openApp('Minecraft')">
+          <p>Minecraft</p>
+        </div>
+        <div id="desktopIcon" style="background-image:url('img/icons/settings.png');" onclick="openApp('Settings')">
+          <p>Settings</p>
+        </div>
+        <div id="desktopIcon" style="background-image:url('img/icons/help.png');" onclick="openApp('Help')">
+          <p>Help</p>
+        </div>
+      <h2>Files</h2>
+    </div>
+    
+    <div id="taskbar">
+      <div id="taskbarItems">
+        <button id="taskbarApp" class="butterHub" onclick="toggleStart();" style="background-image:url('favicon.ico');" title="ButterHub">ButterHub</button>
+        
+        <button id="taskbarApp" onclick="openApp('Boogle Brome');" style="background-image:url('favicon.ico');" title="Boogle Brome">Boogle Brome</button>
+        <button id="taskbarApp" onclick="openApp('Minecraft');" style="background-image:url('img/icons/minecraft.jpeg');" title="Minecraft 1.5.2">Minecraft</button>
+        <button id="taskbarApp" onclick="openApp('Settings');" style="background-image:url('img/icons/settings.png');" title="Settings">Settings</button>
+        <button id="taskbarApp" onclick="openApp('Help');" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Question_mark_white_icon.svg/1024px-Question_mark_white_icon.svg.png')" title="Help">Help</button>
+      </div>
+    </div>
+    
+    <audio src="audio/OS/alert.m4a" id="alertSound"></audio>
+    
+    <script src="main.js"></script>
+    <script src="appDir.js"></script>
+  </body>
+</html>
