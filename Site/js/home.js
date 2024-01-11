@@ -3,6 +3,7 @@ const sidebar = document.getElementById("sidebar");
 const main = document.getElementById("main");
 const background = document.getElementById("background");
 const header = document.getElementById("header");
+const blurOverlay = document.getElementById("blurOverlay");
 const alertAudio = new Audio('audio/alert.m4a');
 var animPlaying = false;
 var sidebarOpen = false;
@@ -21,16 +22,18 @@ logo.onclick = function() {
 
 function closeSidebar() {
   sidebar.style.left = "-35rem";
-  main.style.filter = "";
-  background.style.filter = "";
-  header.style.filter = "";
+  blurOverlay.style.backdropFilter = "";
+  blurOverlay.style['-webkit-backdrop-filter'] = "";
+  setTimeout(function(){
+    blurOverlay.style.display = "none";
+  }, 200);
 }
 
 function openSidebar() {
+  blurOverlay.style.display = "block";
   sidebar.style.left = "0";
-  main.style.filter = "blur(2vh)";
-  background.style.filter = "blur(2vh)";
-  header.style.filter = "blur(2vh)";
+  blurOverlay.style.backdropFilter = "blur(2vh)";
+  blurOverlay.style['-webkit-backdrop-filter'] = "blur(2vh)";
 }
 
 function toggleSidebar() {
