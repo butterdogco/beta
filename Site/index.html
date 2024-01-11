@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRKNHWYBXN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      
+      gtag('config', 'G-MRKNHWYBXN');
+    </script>
+    <title>ButterDogCo - Home</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="img/butterdog.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head>
+  <body>
+    <div id="background"></div>
+    <header id="header">
+      <button id="burgerMenu" onclick="toggleSidebar()">=</button>
+      <img src="img/butterdog.ico" id="logo">
+    </header>
+    
+    <div class="sidebar" id="sidebar">
+      <button id="close" onclick="closeSidebar()">X</button>
+      <div class="links">
+        <a class="active" href="">Home</a>
+        <a href="apps.html">Apps</a>
+        <a href="about.html">About</a>
+      </div>
+    </div>
+    
+    <main id="main">
+      <p id="bigMainText"><b>Hi, we're ButterDogCo.</b> <br>Our goal is to make life <b>easier</b>, <b>funner</b>, and <b>more enjoyable</b>.</p>
+      <p id="mainText">Try our apps to make life <b>easier</b> with ButterDogCo.</p>
+      
+      <div class="apps" id="apps">
+        <div class="app" id="boogleApp">
+          <a href="https://boogle.b-dog.co">
+            <img src="img/logos/boogle.png">
+            <p>Make a search with <b>Boogle</b></p>
+          </a>
+        </div>
+        <div class="app" id="wikabediaApp">
+          <a href="https://wikabedia.b-dog.co">
+            <img src="img/logos/wikabedia.png">
+            <p>Learn & something new with <b>Wikabedia</b></p>
+          </a>
+        </div>
+        <div class="app" id="butterflixApp">
+          <a href="https://butterflix.b-dog.co">
+            <img src="img/logos/butterflix.png">
+            <p>Watch the latest with <b>ButterFlix</b></p>
+          </a>
+        </div>
+      </div>
+      
+      <p class="headingText" id="latestHeading">Latest <b>news</b> from ButterDogCo.</p>
+      <div class="news">
+        <p id="headText">Introducing the all new website</p>
+        <p id="bodyText">
+          Welcome to the new ButterDogCo website! We're excited for you to explore this update, as we truly focused on your experience.<br>
+          <br>
+          At ButterDogCo, we probably value your user experience. So we listened to your non-existent feedback, the sleek new hamburger menu, the exact same background, the somewhat reasonably sized apps on the home page, and more for you to discover!<br>
+          <br>
+          Begin the new chapter of the ButterDogCo experience today. We guarantee that this new design is so good looking, it's an easy smash.
+          </p>
+        <img src="img/general/shocked-new-site.png" id="mainImage">
+      </div>
+      
+      <p class="headingText" id="contactHeading">Interested in <b>contacting</b> us?</p>
+      <div class="apps" id="contact">
+        <div class="app" id="keeganContact">
+          <a href="mailto:keeganwsmit@pm.me" title="Click me to send me an Email.">
+            <img src="img/profiles/keegan.png">
+            <p>Hi I'm  <b>Keegan</b>. The CEO!</p>
+          </a>
+        </div>
+        <div class="app" id="kaiContact">
+          <a href="" title="Click to send me an Email.">
+            <img src="img/profiles/kai.jpg">
+            <p>Hey I'm <b>Kai</b>! The COO.</p>
+          </a>
+        </div>
+        <div class="app" id="discordContact">
+          <a href="https://discord.gg/KZzVM4rfg6" title="Click to join!">
+            <img src="img/logos/discord.jpg">
+            <p>Join our Discord! <b></b></p>
+          </a>
+        </div>
+      </div>
+    </main>
+    
+    <script src="js/home.js"></script>
+  </body>
+</html>

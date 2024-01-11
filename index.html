@@ -1,294 +1,53 @@
-
 <!DOCTYPE html>
 <html>
-
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRKNHWYBXN"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-MRKNHWYBXN');
-  </script>
-
-  <title>Try new stuff - ButterDogCo</title>
-  <link rel="shortcut icon" href="https://b-dog.co/img/favicon.ico">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <style>
-    @keyframes slideIn {
-      0% {
-        opacity: 0;
-        left: -100vw;
-        margin-left: -100vw;
-      }
-
-      100% {
-        left: 0px;
-        margin-left: 0px;
-        opacity: 1;
-      }
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      color: white;
-      background-image: url('https://b-dog.co/img/background.jpeg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 100vh;
-      margin: 0;
-      height: 120%;
-      overflow: overlay;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    #nav {
-      display: inline-flex;
-      height: 115px;
-      margin: 0;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: rgba(230, 230, 240, 0.3);
-      backdrop-filter: blur(12px);
-      border-radius: 80px;
-      margin: 10px;
-      z-index: 100;
-      animation: slideIn 0.9s ease;
-      transition: 0.3s ease;
-      width: 225px;
-      overflow-x: auto;
-      overflow-y: hidden;
-      white-space: nowrap;
-      -ms-overflow-style: none;
-      /* for Internet Explorer, Edge */
-      scrollbar-width: none;
-      /* for Firefox */
-    }
-
-    #nav img {
-      padding: 15px;
-      margin: 15px;
-      height: 50px;
-      width: 50px;
-      cursor: pointer;
-    }
-
-    main {
-      justify-content: center;
-    }
-
-    .news {
-      padding-bottom: 100px;
-      padding-top: 30px;
-      width: 96vw;
-      height: 80vh;
-      border-radius: 30px;
-      background-color: rgba(230, 230, 240, 0.3);
-      margin-top: 140px;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
-      transition: 0.3s ease;
-      backdrop-filter: blur(12px);
-      animation: slideIn 0.6s ease;
-      cursor: pointer;
-    }
-
-    .news:hover {
-      height: 83vh;
-      width: 100vw;
-    }
-
-    .news img {
-      width: 90%;
-      height: 100%;
-      border-radius: 30px;
-    }
-
-    .card {
-      width: 410px;
-      height: 410px;
-      padding-bottom: 3%;
-      margin: 1%;
-      background-color: rgba(230, 230, 240, 0.3);
-      border-radius: 30px;
-      justify-content: center;
-      transition: 0.2s ease;
-      text-align: center;
-      cursor: pointer;
-      display: flex;
-      backdrop-filter: blur(12px);
-    }
-
-    .card:hover {
-      background-color: rgba(250, 250, 255, 0.5);
-    }
-
-    .card a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .card img {
-      width: 68%;
-      height: 70%;
-      margin: 10px;
-      object-fit: contain;
-      border-radius: 0px;
-    }
-
-    .card p {
-      margin-left: 10px;
-      margin-right: 10px;
-      font-size: 20px;
-    }
-
-    .card h2 {
-      cursor: pointer;
-      font-size: 28px;
-    }
-
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-      height: 100%;
-      justify-content: center;
-    }
-
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    #nav::-webkit-scrollbar {
-      display: none;
-    }
-
-    #menuIcon {
-      transition: 0.2s ease;
-    }
-
-    #closeMenuIcon {
-      transition: 0.2s ease;
-    }
-
-    #menuIcon:hover {
-      filter: brightness(80%);
-    }
-
-    #closeMenuIcon:hover {
-      filter: brightness(80%);
-    }
-
-    #closeMenuIcon {
-      display: none;
-    }
-
-    #nav a {
-      margin: 38px;
-      font-size: 30px;
-      transition: 0.2s ease;
-    }
-
-    #nav #active {
-      font-weight: bold;
-    }
-
-    #nav a:hover {
-      letter-spacing: 4px;
-      margin-left: 34px;
-    }
-
-    *::-webkit-scrollbar {
-      background-color: transparent;
-      width: 10px;
-    }
-
-    *::-webkit-scrollbar-track {
-      background-color: transparent;
-    }
-
-    *::-webkit-scrollbar-thumb {
-      border-radius: 20px;
-      border: 1px solid transparent;
-      background-color: rgba(0, 0, 0, 0.2);
-      background-clip: content-box;
-    }
-
-    *::-webkit-scrollbar-thumb:hover {
-      background: gray;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="nav">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Hamburger_icon_white.svg/768px-Hamburger_icon_white.svg.png"
-      onclick="openMenu()" id="menuIcon">
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/VisualEditor_-_Icon_-_Close_-_white.svg/1200px-VisualEditor_-_Icon_-_Close_-_white.svg.png"
-      onclick="closeMenu()" id="closeMenuIcon">
-    <img src="https://b-dog.co/img/favicon.ico" id="icon" onclick="iconClick()" style="transition: 0.2s ease;">
-
-    <a href="https://b-dog.co/">Home</a>
-    <a href="https://b-dog.co/applications">Apps</a>
-    <a href="https://b-dog.co/news">News</a>
-    <a href="https://b-dog.co/about">About Us</a>
-    <a href="#" id="active">New Stuff</a>
-  </div>
-  <main>
-    <!--
-      <div class="news">
-        <a href="https://butterflix.b-dog.co">
-          <img src="https://b-dog.co/img/Shrek%20and%20amogus%20love%20story%20WIDE.png">
-          <h1>Available on ButterFlix now!</h1>
-        </a>
-      </div>
-      -->
-    <div style="margin-top: 140px;"></div>
-    <div class="cards">
-      <div class="card">
-        <a href="https://beta.b-dog.co/OS/ButterOS.html">
-          <img src="https://b-dog.co/img/butter-os-tab.png">
-          <h2>ButterOS</h2>
-          <p>no spyware we promise</p>
-        </a>
-      </div>
-      <div class="card">
-        <a href="https://beta.b-dog.co/Butterfiy/">
-          <img src="https://b-dog.co/img/butterfiy.png">
-          <h2>Butterfiy</h2>
-          <p>now you might only get 3 ads</p>
-        </a>
+  <head>
+    <title>ButterDogCo - Beta</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/apps.css">
+    <link rel="shortcut icon" href="img/butterdog.ico">
+  </head>
+  <body>
+    <div id="background"></div>
+    <header id="header">
+      <button id="burgerMenu" onclick="toggleSidebar()">=</button>
+      <img src="img/butterdog.ico" id="logo">
+    </header>
+    
+    <div class="sidebar" id="sidebar">
+      <button id="close" onclick="closeSidebar()">X</button>
+      <div class="links">
+        <a href="https://b-dog.co">Home</a>
+        <a href="https://b-dog.co/applications">Apps</a>
+        <a href="https://b-dog.co/news">News</a>
+        <a href="https://b-dog.co/about">About</a>
       </div>
     </div>
-  </main>
-  <script>
+    
+    <main id="main">
+      <p id="bigMainText">Try out the <b>latest</b> from ButterDogCo</p>
 
-    function openMenu() {
-      document.getElementById('nav').style.width = "98.5%";
-      document.getElementById('closeMenuIcon').style.display = "block";
-      document.getElementById('menuIcon').style.display = "none";
-    }
+      <div class="apps" id="apps">
+        <div class="app" id="mainApp">
+          <a href="https://beta.b-dog.co/Site/" title="click to try it out">
+            <img src="img/butterdog.ico">
+            <p>try the all new <b>refreshed site</b></p>
+          </a>
+        </div>
+        <div class="app" id="butterOSApp">
+          <a href="https://beta.b-dog.co/OS/" title="click to try it out">
+            <img src="img/logos/butterOS.png">
+            <p>try a new computer with <b>butterOS</b></p>
+          </a>
+        </div>
+        <div class="app" id="butterfyApp">
+          <a href="https://b-dog.co/Butterfy/beta/" title="click to try it out">
+            <img src="img/logos/butterfiy.png">
+            <p>listen to the latest bangers on <b>butterfy</b></p>
+          </a>
+        </div>
+      </div>
+    </main>
 
-    function closeMenu() {
-      document.getElementById('nav').style.width = "225px";
-      document.getElementById('menuIcon').style.display = "block";
-      document.getElementById('closeMenuIcon').style.display = "none";
-    }
-
-    function iconClick() {
-      document.getElementById('icon').style.rotate = "180deg";
-    }
-
-  </script>
-</body>
-
+    <script src="js/home.js"></script>
+  </body>
 </html>

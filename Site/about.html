@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRKNHWYBXN"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      
+      gtag('config', 'G-MRKNHWYBXN');
+    </script>
+    <title>ButterDogCo - About Us</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="shortcut icon" href="img/butterdog.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+  </head>
+  <body>
+    <div id="background"></div>
+    <header id="header">
+      <button id="burgerMenu" onclick="toggleSidebar()">=</button>
+      <img src="img/butterdog.ico" id="logo">
+    </header>
+    
+    <div class="sidebar" id="sidebar">
+      <button id="close" onclick="closeSidebar()">X</button>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="apps.html">Apps</a>
+        <a href="" class="active">About</a>
+      </div>
+    </div>
+    
+    <main id="main">
+      <p id="bigMainText">Learn more about <b>ButterDogCo</b>.</p>
+      
+      <div class="news">
+        <p id="headText">ButterDogCo's Story</p>
+        <p id="bodyText">
+          You may be asking yourself, what's ButterDogCo? ButterDogCo is a 100% legal company that is owned by Keegan, and co-owned by Kai (The COO).
+          <br><br>
+          We were created in 2021 inside of a middle school science class. When we were created, the entire company was based around a "really good" search engine called ButterDog Search.
+          <br><br>
+          Later, ButterDogCo began expanding into multiple different websites, later called "apps." This is where we are now, no longer on Google Sites, and with a relatively large and friendly community.
+          </p>
+        <img src="img/butterdog.ico" id="mainImage">
+      </div>
+      
+      <p class="headingText" id="contactHeading">Interested in <b>contacting</b> us?</p>
+      <div class="apps" id="contact">
+        <div class="app" id="keeganContact">
+          <a href="mailto:keeganwsmit@pm.me" title="Click me to send me an Email.">
+            <img src="img/profiles/keegan.png">
+            <p>Hi I'm  <b>Keegan</b>. The CEO!</p>
+          </a>
+        </div>
+        <div class="app" id="kaiContact">
+          <a href="" title="Click to send me an Email.">
+            <img src="img/profiles/kai 2.png">
+            <p>Hey I'm <b>Kai</b>! The COO.</p>
+          </a>
+        </div>
+        <div class="app" id="discordContact">
+          <a href="https://discord.gg/KZzVM4rfg6" title="Click to join!">
+            <img src="img/logos/discord.jpg">
+            <p>Join our Discord! <b></b></p>
+          </a>
+        </div>
+      </div>
+    </main>
+    
+    <script src="js/home.js"></script>
+  </body>
+</html>
